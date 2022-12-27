@@ -18,6 +18,9 @@ let [keyWord, newkeyWord]= useState("");
 
 function handleKeyword(event){
     newkeyWord(event.target.value);
+
+    //document from: https://dictionaryapi.dev/ 
+    
     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     console.log(apiURL);
     axios.get(apiURL).then(handleResult);
