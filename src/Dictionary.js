@@ -20,14 +20,12 @@ let [keyWord, newkeyWord]= useState("");
 
 
 
-
-
 function handleKeyword(event){
     newkeyWord(event.target.value);
     let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/en/<word>";
-    
-   }
+    axios.get(apiURL).then(handleResult);
 
+   }
 
     return (
         <div className="dictionary">
