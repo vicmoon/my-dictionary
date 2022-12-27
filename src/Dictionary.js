@@ -9,20 +9,17 @@ let [keyWord, newkeyWord]= useState("");
 
    function searchWord(event){
     event.preventDefault();
-    alert(`Searching for ${keyWord}`)
+  
    }
    
-
-
    function handleResult(response){
-    console.log(response);
+    console.log(response.data[0]);
    }
-
-
 
 function handleKeyword(event){
     newkeyWord(event.target.value);
-    let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/en/<word>";
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
+    console.log(apiURL);
     axios.get(apiURL).then(handleResult);
 
    }
