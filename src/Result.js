@@ -14,7 +14,7 @@ export default function Results(props){
             );
             })}
         </div>
-        )
+        );
     } else {
         return null;
     }

@@ -9,8 +9,7 @@ let [keyWord, newKeyWord]= useState("");
 let [result, newResult]= useState(null);
 
 
-function handleResult(response){
-    console.log(response.data[0]);
+function handleResponse(response){
     newResult(response.data[0]);
     // console.log(response.data[0].meanings[0].definitions[0].definition);
 
@@ -19,16 +18,15 @@ function handleResult(response){
    function searchWord(event){
     event.preventDefault();
   
+     //document from: https://dictionaryapi.dev/ 
+
+     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
+     axios.get(apiURL).then(handleResponse);
    }
    
 
-function handleKeyword(event){
-    newKeyWord(event.target.value);
-
-    //document from: https://dictionaryapi.dev/ 
-
-    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
-    axios.get(apiURL).then(handleResult);
+function handleSearch(event){
+newKeyWord(event.target.value);
 
    }
 
@@ -38,7 +36,7 @@ function handleKeyword(event){
             <input
             placeholder="Type a word"
             type="search"
-            onChange={handleKeyword}
+            onChange={handleSearch}
             /> </form>
         
             <Result results={result} />
