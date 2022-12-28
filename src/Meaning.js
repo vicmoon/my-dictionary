@@ -3,9 +3,7 @@ import React from "react";
 
 export default function Meaning(props){
     return (
-        <div className="meaning"> 
-        <h3>{props.meaning.partofSpeech} </h3>
-        
+        <div className="meaning">  
         {props.meaning.definitions.map(function(definition, index) 
         {
             return (
