@@ -1,0 +1,22 @@
+.phonetic a{
+   text-decoration: none; 
+   padding: 9px 9px;
+   border: 1px solid;
+   font-size: 11px;
+   border-radius: 19px;
+   transition: all 150ms ease-in-out;
+   margin-bottom: 15px;
+
+}
+
+.phonetic {
+    height: 50px;
+}
+.phonetic a:hover{
+    background-color:rgb(30, 19, 227);
+    color: azure;
+}
+.phonetic small {
+opacity: 0.5;
+font-weight: bold;
+}
