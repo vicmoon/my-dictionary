@@ -4,9 +4,10 @@ import axios from "axios";
 import Result from  "./Result.js";  
 
 
-export default function Dictionary(){
+export default function Dictionary(props){
 let [keyWord, newKeyWord]= useState("");
 let [result, newResult]= useState(null);
+
 
 
 function handleResponse(response){
@@ -15,32 +16,37 @@ function handleResponse(response){
 
    }
 
-   function searchWord(event){
+   function handleSubmit(event){
     event.preventDefault();
-  
-     //document from: https://dictionaryapi.dev/ 
-
-     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
      axios.get(apiURL).then(handleResponse);
+    
+    
    }
-   
 
 function handleSearch(event){
 newKeyWord(event.target.value);
 
    }
 
+
     return (
         <div className="dictionary">
-            <form onSubmit={searchWord}> 
+            <section> 
+            <form onSubmit={handleSubmit}> 
             <input
-            placeholder="Type a word"
+            placeholder="Type a word like: apple, dog, sun, city..."
             type="search"
             onChange={handleSearch}
             /> </form>
-        
+            <div className="hint">
+            
+            </div>
+           </section>
+
             <Result results={result} />
         
         </div>
     );
+
 }

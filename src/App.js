@@ -6,11 +6,9 @@ function App() {
     <div className="App">
       <header className="container">
         <h1>Dictionary</h1>
-      
-         <Dictionary />
-       
-      </header>
-      <footer>
+        <Dictionary />
+       </header>
+      <footer className="container">
         Project coded by <a href= " http://victoriamunteanuportfolio.net/" > Victoria Munteanu</a>
       </footer>
     </div>

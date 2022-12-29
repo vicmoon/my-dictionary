@@ -1,11 +1,23 @@
 .App {
   text-align: center;
+  
+}
+.App .container {
+  background-image: url("/public/letters.jpg");
+  background-size: cover;
+  padding: 60px;
+  margin-top: 30px; 
+  border-radius: 20px;
+
+}
+.App footer{
+
+text-align: center;
+color:azure;
+font-weight: bold;
 }
 
-.App .container {
-  background:blanchedalmond;
-  padding: 50px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
+.App h1 {
+  color: azure;
+  font-size: 80px;
 }

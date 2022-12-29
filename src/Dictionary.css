@@ -1,3 +1,30 @@
 .dictionary {
     margin:30px 0;
+    
+}
+
+.dictionary section {
+    background: azure;
+    padding: 10px;
+    box-shadow: 0 4px 4px azure;
+    margin: 5px;
+    border-radius: 15px;
+
+  
+}
+
+.dictionary form{
+    padding-bottom: 5px;
+}
+
+.dictionary input{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px 5px;
+    color: red;
+}
+
+.dictionary .hint{
+    font-style: italic;
+    font-size: 12px;
 }
