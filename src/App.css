@@ -3,7 +3,7 @@
   
 }
 .App .container {
-  background-image: url("/public/letters.jpg");
+  background-image: url("/public/drawing.jpg");
   background-size: cover;
   padding: 60px;
   margin-top: 30px; 
@@ -13,14 +13,21 @@
 .App footer{
 
 text-align: center;
-color:azure;
+color: black;
 font-weight: bold;
+
+padding: 30px;
+margin-top: 20px;
 }
 
 .App h1 {
-  color: azure;
+  color: black;
   font-size: 80px;
+  background: rgb(239, 239, 228);
+  opacity: 0.7;
+
 }
 .App h5 {
   color: azure;
+  text-decoration: overline;
 }
