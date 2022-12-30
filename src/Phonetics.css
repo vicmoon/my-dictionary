@@ -13,8 +13,8 @@
     height: 50px;
 }
 .phonetic a:hover{
-    background-color:rgb(30, 19, 227);
-    color: azure;
+    background-color:yellow;
+    color: black;
 }
 .phonetic small {
 opacity: 0.5;

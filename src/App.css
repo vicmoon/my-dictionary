@@ -15,9 +15,9 @@
 text-align: center;
 color: black;
 font-weight: bold;
-
 padding: 30px;
 margin-top: 20px;
+text-decoration:underline;
 }
 
 .App h1 {

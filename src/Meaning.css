@@ -1,2 +1,12 @@
 .meaning .definition {
+font-size: 15px;
+text-align: left;
+margin-left: 80px;
+line-height: 1.5;
+font-weight: 500;
+}
+
+.meaning .example {
+font-size: 12px;
+opacity: 0.8;
 }
