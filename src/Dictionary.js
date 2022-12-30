@@ -35,7 +35,7 @@ newKeyWord(event.target.value);
             <section> 
             <form onSubmit={handleSubmit}> 
             <input
-            placeholder="Type a word like: apple, dog, sun, city..."
+            placeholder="Type a word like: truth, word, sun, music, wisdom..."
             type="search"
             onChange={handleSearch}
             /> </form>
