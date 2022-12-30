@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  max-width: 990px;
+  margin: 0 auto;
+ 
   
 }
 .App .container {
@@ -25,6 +28,7 @@ text-decoration:underline;
   font-size: 80px;
   background: rgb(239, 239, 228);
   opacity: 0.7;
+  box-shadow: 0 3px 3px azure;
 
 }
 .App h5 {
